@@ -35,14 +35,14 @@ md-toast[md-theme=warn] .md-toast-content {
 
 
 
+.md-char-count {
+  color: #ff8a80; }
+
 html {
   height: 100%; }
 
 body {
   min-height: 100%; }
-
-.md-char-count {
-  color: #ff8a80; }
 
 .location {
   padding-bottom: 100px;
@@ -100,7 +100,8 @@ md-input-container .md-char-counter {
   right: auto;
   bottom: auto;
   margin-left: 5px;
-  position: absolute; }
+  position: absolute;
+  z-index: 1000; }
 
 md-fab-speed-dial {
   -ms-flex-align: start;

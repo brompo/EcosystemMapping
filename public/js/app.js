@@ -42,7 +42,7 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -60,9 +60,9 @@
 
 	__webpack_require__(40);
 
-/***/ }),
+/***/ },
 /* 1 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -76,9 +76,9 @@
 	angular.module('app.directives', []);
 	angular.module('app.components', ['ui.router', 'ngMaterial', 'angular-loading-bar', 'restangular', 'ngStorage', 'satellizer', 'leaflet-directive', 'ngStorage', 'ngMaterialDatePicker']);
 
-/***/ }),
+/***/ },
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -86,9 +86,9 @@
 
 	angular.module('app.run').run(_routes.RoutesRun);
 
-/***/ }),
+/***/ },
 /* 3 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -118,9 +118,9 @@
 	    $transitions.onBefore(requiresAuthCriteria, redirectToLogin, { priority: 10 });
 	}
 
-/***/ }),
+/***/ },
 /* 4 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -134,9 +134,9 @@
 
 	angular.module('app.config').config(_routes.RoutesConfig).config(_loading_bar.LoadingBarConfig).config(_theme.ThemeConfig).config(_satellizer.SatellizerConfig);
 
-/***/ }),
+/***/ },
 /* 5 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -321,9 +321,9 @@
 	    });
 	}
 
-/***/ }),
+/***/ },
 /* 6 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -338,9 +338,9 @@
 		cfpLoadingBarProvider.includeSpinner = true;
 	}
 
-/***/ }),
+/***/ },
 /* 7 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -360,9 +360,9 @@
 		$mdThemingProvider.theme('warn');
 	}
 
-/***/ }),
+/***/ },
 /* 8 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -383,9 +383,9 @@
 		$authProvider.tokenRoot = 'data'; //compensates success response macro
 	}
 
-/***/ }),
+/***/ },
 /* 9 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -403,9 +403,9 @@
 
 	angular.module('app.filters').filter('capitalize', _capitalize.CapitalizeFilter).filter('humanReadable', _human_readable.HumanReadableFilter).filter('truncateCharacters', _truncate_characters.TruncatCharactersFilter).filter('truncateWords', _truncate_words.TruncateWordsFilter).filter('trustHtml', _trust_html.TrustHtmlFilter).filter('ucfirst', _ucfirst.UcFirstFilter);
 
-/***/ }),
+/***/ },
 /* 10 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -421,9 +421,9 @@
 		};
 	}
 
-/***/ }),
+/***/ },
 /* 11 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -444,9 +444,9 @@
 		};
 	}
 
-/***/ }),
+/***/ },
 /* 12 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -482,9 +482,9 @@
 		};
 	}
 
-/***/ }),
+/***/ },
 /* 13 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -510,9 +510,9 @@
 		};
 	}
 
-/***/ }),
+/***/ },
 /* 14 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	"use strict";
 
@@ -526,9 +526,9 @@
 		};
 	}
 
-/***/ }),
+/***/ },
 /* 15 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	"use strict";
 
@@ -545,9 +545,9 @@
 		};
 	}
 
-/***/ }),
+/***/ },
 /* 16 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -597,9 +597,9 @@
 
 	angular.module('app.components').component('getLocation', _getLocation.GetLocationComponent).component('createProject', _createProject.CreateProjectComponent).component('createEvent', _createEvent.CreateEventComponent).component('organisationDetails', _organisationDetails.OrganisationDetailsComponent).component('organisationMsg', _organisationMsg.OrganisationMsgComponent).component('projectDetails', _projectDetails.ProjectDetailsComponent).component('projectMsg', _projectMsg.ProjectMsgComponent).component('messageDetails', _messageDetails.MessageDetailsComponent).component('message', _message.MessageComponent).component('createOrganisation', _createOrganisation.CreateOrganisationComponent).component('homeView', _homeView.HomeViewComponent).component('ecosystemMap', _ecosystemMap.EcosystemMapComponent).component('searchAutocomplete', _searchAutocomplete.SearchAutocompleteComponent).component('leftMenu', _leftMenu.LeftMenuComponent).component('selectEcosystem', _selectEcosystem.SelectEcosystemComponent).component('appHeader', _appHeader.AppHeaderComponent).component('appView', _appView.AppViewComponent).component('appShell', _appShell.AppShellComponent).component('resetPassword', _resetPassword.ResetPasswordComponent).component('forgotPassword', _forgotPassword.ForgotPasswordComponent).component('loginForm', _loginForm.LoginFormComponent).component('registerForm', _registerForm.RegisterFormComponent);
 
-/***/ }),
+/***/ },
 /* 17 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -659,9 +659,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 18 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	"use strict";
 
@@ -796,9 +796,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 19 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	"use strict";
 
@@ -960,9 +960,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 20 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -1013,9 +1013,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 21 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -1065,9 +1065,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 22 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -1114,9 +1114,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 23 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -1166,9 +1166,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 24 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -1216,9 +1216,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 25 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -1268,9 +1268,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 26 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -1482,9 +1482,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 27 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -1524,9 +1524,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 28 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -1631,6 +1631,7 @@
 	                angular.forEach(response.locations, function (locations) {
 	                    angular.forEach(locations, function (location) {
 	                        var marker = {
+	                            group: 'markers',
 	                            lat: parseFloat(location.lat),
 	                            lng: parseFloat(location.long),
 	                            getMessageScope: function getMessageScope() {
@@ -1708,9 +1709,9 @@
 	    }
 	};
 
-/***/ }),
+/***/ },
 /* 29 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -1898,9 +1899,9 @@
 	  bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 30 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -2020,6 +2021,7 @@
 	                angular.forEach(response.locations, function (locations) {
 	                    angular.forEach(locations, function (location) {
 	                        var marker = {
+	                            group: 'markers',
 	                            lat: parseFloat(location.lat),
 	                            lng: parseFloat(location.long),
 	                            getMessageScope: function getMessageScope() {
@@ -2108,6 +2110,7 @@
 	                            angular.forEach(response.locations, function (locations) {
 	                                angular.forEach(locations, function (location) {
 	                                    var marker = {
+	                                        group: 'markers',
 	                                        lat: parseFloat(location.lat),
 	                                        lng: parseFloat(location.long),
 	                                        getMessageScope: function getMessageScope() {
@@ -2165,6 +2168,7 @@
 	                            angular.forEach(response.locations, function (locations) {
 	                                angular.forEach(locations, function (location) {
 	                                    var marker = {
+	                                        group: 'markers',
 	                                        lat: parseFloat(location.lat),
 	                                        lng: parseFloat(location.long),
 	                                        getMessageScope: function getMessageScope() {
@@ -2215,55 +2219,58 @@
 	                this.$log.log("value holder");
 	                this.$log.log(valueHolder);
 	            } else {
-	                var _scope = this.$scope;
-	                var markers = [];
-	                //let role = {};
-	                //creating location information
-	                angular.forEach(this.$localStorage.organisations.data, function (response) {
-	                    angular.forEach(response.locations, function (locations) {
-	                        angular.forEach(locations, function (location) {
-	                            var marker = {
-	                                lat: parseFloat(location.lat),
-	                                lng: parseFloat(location.long),
-	                                getMessageScope: function getMessageScope() {
-	                                    var infowindowScope = _scope.$new(true);
-	                                    infowindowScope.data = response;
-	                                    return infowindowScope;
-	                                },
-	                                message: '<organisation-msg></organisation-msg>',
-	                                icon: {}
-	                            };
-	                            try {
-	                                var roleName = response.roles.data[0].name;
-	                                if (roleName == "R&D") {
-	                                    marker.icon = _this5.markerIcons.randD;
-	                                    markers.push(marker);
-	                                } else if (roleName == "Funding Agencies") {
-	                                    marker.icon = _this5.markerIcons.fundingAgencies;
-	                                    markers.push(marker);
-	                                } else if (roleName == "Incubators") {
-	                                    marker.icon = _this5.markerIcons.incubators;
-	                                    markers.push(marker);
-	                                } else if (roleName == "Development Organization") {
-	                                    marker.icon = _this5.markerIcons.developmentOrganization;
-	                                    markers.push(marker);
-	                                } else if (roleName == "Startup") {
-	                                    marker.icon = _this5.markerIcons.startup;
-	                                    markers.push(marker);
-	                                } else if (roleName == "Coworking Space") {
-	                                    marker.icon = _this5.markerIcons.coworkingSpaces;
-	                                    markers.push(marker);
-	                                } else {
-	                                    _this5.$log.log("no such a role");
+	                (function () {
+	                    var scope = _this5.$scope;
+	                    var markers = [];
+	                    //let role = {};
+	                    //creating location information
+	                    angular.forEach(_this5.$localStorage.organisations.data, function (response) {
+	                        angular.forEach(response.locations, function (locations) {
+	                            angular.forEach(locations, function (location) {
+	                                var marker = {
+	                                    group: 'markers',
+	                                    lat: parseFloat(location.lat),
+	                                    lng: parseFloat(location.long),
+	                                    getMessageScope: function getMessageScope() {
+	                                        var infowindowScope = scope.$new(true);
+	                                        infowindowScope.data = response;
+	                                        return infowindowScope;
+	                                    },
+	                                    message: '<organisation-msg></organisation-msg>',
+	                                    icon: {}
+	                                };
+	                                try {
+	                                    var roleName = response.roles.data[0].name;
+	                                    if (roleName == "R&D") {
+	                                        marker.icon = _this5.markerIcons.randD;
+	                                        markers.push(marker);
+	                                    } else if (roleName == "Funding Agencies") {
+	                                        marker.icon = _this5.markerIcons.fundingAgencies;
+	                                        markers.push(marker);
+	                                    } else if (roleName == "Incubators") {
+	                                        marker.icon = _this5.markerIcons.incubators;
+	                                        markers.push(marker);
+	                                    } else if (roleName == "Development Organization") {
+	                                        marker.icon = _this5.markerIcons.developmentOrganization;
+	                                        markers.push(marker);
+	                                    } else if (roleName == "Startup") {
+	                                        marker.icon = _this5.markerIcons.startup;
+	                                        markers.push(marker);
+	                                    } else if (roleName == "Coworking Space") {
+	                                        marker.icon = _this5.markerIcons.coworkingSpaces;
+	                                        markers.push(marker);
+	                                    } else {
+	                                        _this5.$log.log("no such a role");
+	                                    }
+	                                } catch (e) {
+	                                    _this5.$log.log("no role info in this org");
 	                                }
-	                            } catch (e) {
-	                                _this5.$log.log("no role info in this org");
-	                            }
+	                            });
 	                        });
 	                    });
-	                });
 
-	                this.markers = markers;
+	                    _this5.markers = markers;
+	                })();
 	            }
 	        }
 
@@ -2286,6 +2293,7 @@
 	                angular.forEach(response.locations, function (locations) {
 	                    angular.forEach(locations, function (location) {
 	                        var marker = {
+	                            group: 'markers',
 	                            lat: parseFloat(location.lat),
 	                            lng: parseFloat(location.long),
 	                            getMessageScope: function getMessageScope() {
@@ -2369,9 +2377,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 31 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -2434,9 +2442,9 @@
 	  bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 32 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -2485,9 +2493,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 33 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -2571,9 +2579,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 34 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -2609,9 +2617,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 35 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -2689,9 +2697,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 36 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -2744,9 +2752,9 @@
 	    bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 37 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -2813,9 +2821,9 @@
 		bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 38 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -2885,17 +2893,17 @@
 		bindings: {}
 	};
 
-/***/ }),
+/***/ },
 /* 39 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
 	angular.module('app.directives');
 
-/***/ }),
+/***/ },
 /* 40 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -2925,9 +2933,9 @@
 
 	angular.module('app.services').service('ProjectsService', _projects.ProjectsService).service('ProjectService', _project.ProjectService).service('EventService', _event.EventService).service('MapDataService', _mapData.MapDataService).service('SidemenuDataService', _sidemenuData.SidemenuDataService).service('EcosystemFilterService', _ecosystemFilter.EcosystemFilterService).service('DataService', _data.DataService).service('OrganizationService', _organization.OrganizationService).service('EcosystemService', _Ecosystem.EcosystemService).service('API', _API.APIService).service('DialogService', _dialog.DialogService).service('ToastService', _toast.ToastService);
 
-/***/ }),
+/***/ },
 /* 41 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -2975,9 +2983,9 @@
 	    return ProjectsService;
 	}();
 
-/***/ }),
+/***/ },
 /* 42 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -3040,9 +3048,9 @@
 	    return Service;
 	}();
 
-/***/ }),
+/***/ },
 /* 43 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -3105,9 +3113,9 @@
 	    return EventService;
 	}();
 
-/***/ }),
+/***/ },
 /* 44 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -3309,9 +3317,9 @@
 	  return MapDataService;
 	}();
 
-/***/ }),
+/***/ },
 /* 45 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -3467,9 +3475,9 @@
 	    return SidemenuDataService;
 	}();
 
-/***/ }),
+/***/ },
 /* 46 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -3514,6 +3522,8 @@
 	    }, {
 	        key: 'orgFilter',
 	        value: function orgFilter(getData, allOrganisations) {
+	            var _this = this;
+
 	            this.globalData = allOrganisations.data;
 	            //local variables for
 	            // storing temporary results
@@ -3541,49 +3551,51 @@
 	                    }
 	                });
 	            } else if (sectorLength && roleLength) {
-	                // creating array of organisation id's by roles
-	                var roleOrgId = [];
-	                var sectorOrgId = [];
-	                angular.forEach(allOrganisations.data, function (org) {
-	                    try {
-	                        var roleInfo = myData.role.indexOf(org.roles.data[0].id);
-	                        if (roleInfo > -1) {
-	                            roleOrgId.push(org.id);
+	                (function () {
+	                    // creating array of organisation id's by roles
+	                    var roleOrgId = [];
+	                    var sectorOrgId = [];
+	                    angular.forEach(allOrganisations.data, function (org) {
+	                        try {
+	                            var roleInfo = myData.role.indexOf(org.roles.data[0].id);
+	                            if (roleInfo > -1) {
+	                                roleOrgId.push(org.id);
+	                            }
+	                            console.log("no stress role");
+	                        } catch (e) {
+	                            console.log("missing role");
+	                            console.log(e);
 	                        }
-	                        console.log("no stress role");
-	                    } catch (e) {
-	                        console.log("missing role");
-	                        console.log(e);
-	                    }
-	                });
+	                    });
 
-	                // for sectors
-	                angular.forEach(allOrganisations.data, function (org) {
-	                    try {
-	                        var sectorInfo = myData.sector.indexOf(org.sectors.data[0].id);
-	                        if (sectorInfo > -1) {
-	                            sectorOrgId.push(org.id);
+	                    // for sectors
+	                    angular.forEach(allOrganisations.data, function (org) {
+	                        try {
+	                            var sectorInfo = myData.sector.indexOf(org.sectors.data[0].id);
+	                            if (sectorInfo > -1) {
+	                                sectorOrgId.push(org.id);
+	                            }
+	                            console.log("no stress sector");
+	                        } catch (e) {
+	                            console.log("missing sector");
 	                        }
-	                        console.log("no stress sector");
-	                    } catch (e) {
-	                        console.log("missing sector");
-	                    }
-	                });
+	                    });
 
-	                //find the intersecting organisations
-	                var foundOrg = [];
-	                var intersectingOrg = this.getIntersecting(sectorOrgId, roleOrgId);
-	                angular.forEach(allOrganisations.data, function (org) {
-	                    if (org.roles.length !== 0 && org.sectors.length !== 0) {
-	                        if (intersectingOrg.indexOf(org.id) > -1) {
-	                            foundOrg.push(org);
+	                    //find the intersecting organisations
+	                    var foundOrg = [];
+	                    var intersectingOrg = _this.getIntersecting(sectorOrgId, roleOrgId);
+	                    angular.forEach(allOrganisations.data, function (org) {
+	                        if (org.roles.length !== 0 && org.sectors.length !== 0) {
+	                            if (intersectingOrg.indexOf(org.id) > -1) {
+	                                foundOrg.push(org);
+	                            }
+	                        } else {
+	                            console.log("missing info in new Logic");
 	                        }
-	                    } else {
-	                        console.log("missing info in new Logic");
-	                    }
-	                });
+	                    });
 
-	                filteredData = foundOrg;
+	                    filteredData = foundOrg;
+	                })();
 	            } else {
 
 	                filteredData = allOrganisations.data;
@@ -3645,9 +3657,9 @@
 	    return EcosystemFilterService;
 	}();
 
-/***/ }),
+/***/ },
 /* 47 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -3763,9 +3775,9 @@
 	    return DataService;
 	}();
 
-/***/ }),
+/***/ },
 /* 48 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -3914,9 +3926,9 @@
 	    return OrganizationService;
 	}();
 
-/***/ }),
+/***/ },
 /* 49 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -3996,9 +4008,9 @@
 	  return EcosystemService;
 	}();
 
-/***/ }),
+/***/ },
 /* 50 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -4038,9 +4050,9 @@
 		});
 	}];
 
-/***/ }),
+/***/ },
 /* 51 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -4113,9 +4125,9 @@
 	    return DialogService;
 	}();
 
-/***/ }),
+/***/ },
 /* 52 */
-/***/ (function(module, exports) {
+/***/ function(module, exports) {
 
 	'use strict';
 
@@ -4164,5 +4176,5 @@
 		return ToastService;
 	}();
 
-/***/ })
+/***/ }
 /******/ ]);
